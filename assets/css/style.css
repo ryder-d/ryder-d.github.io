@@ -1,0 +1,88 @@
+/* Design Inspired by Sebastian Kinne && James Alexandre */
+
+:root {
+    --text-color: #b7b2b5;
+    --background-color: #242b40;
+    --color-linkedin: #0072b1;
+    --color-gitlab: #fc6d27;
+    --color-github: black;
+    --color-email: #eee;
+}
+
+html, body {
+    margin: 0; 
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.linkedin {
+    color: var(--color-linkedin);
+}
+
+.gitlab {
+    color: var(--color-gitlab);
+}
+
+.github {
+    color: var(--color-github);
+}
+
+.email {
+    color: var(--color-email);
+}
+
+h1.name {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+}
+
+h2.info {
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+.icons {
+    padding: 0px;
+}
+
+.icons > li {
+    display: inline;
+    list-style-type: none;
+    padding: 0px 5px;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+    h1.name {
+        font-size: 16px;
+    }
+    
+    h2.info {
+        font-size: 10px;
+    }
+
+    .icons > a > img {
+        width: 24px;
+        height: 24px;;
+    }
+}
